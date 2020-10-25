@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "novaloop-ch"
+    }
+  },
+  "defaultProject": "novaloop-ch",
+  "cli": {
+    "analytics": "e3056810-2979-4315-a3d0-4e91a382b4b0"
+  }
 }
