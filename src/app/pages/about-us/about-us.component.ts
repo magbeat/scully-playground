@@ -1,15 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Observable} from "rxjs";
+import {Page} from "../../shared/interfaces/page.interface";
+import {PageService} from "../../shared/services/page.service";
 
 @Component({
-  selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.scss']
+    selector: 'app-about-us',
+    templateUrl: './about-us.component.html',
+    styleUrls: ['./about-us.component.scss']
 })
 export class AboutUsComponent implements OnInit {
 
-  constructor() { }
+    public page$: Observable<Page>;
 
-  ngOnInit(): void {
-  }
+    constructor(private pageService: PageService) {
+    }
 
+    ngOnInit(): void {
+        this.page$ = this.pageService.loadPage('about-us');
+    }
 }

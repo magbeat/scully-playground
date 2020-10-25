@@ -1,1 +1,2 @@
-<p>about-us works!</p>
+<h1>{{(page$ | async)?.title}}</h1>
+<p [innerHTML]="(page$ | async)?.content"></p>
