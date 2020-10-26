@@ -6,20 +6,22 @@ import { AppComponent } from './app.component';
 import { ScullyLibModule } from '@scullyio/ng-lib';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
-import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { PageComponent } from './shared/components/page/page.component';
+import { SectionComponent } from './shared/components/section/section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    PageComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ScullyLibModule,
-    GraphQLModule,
     HttpClientModule
   ],
   providers: [],

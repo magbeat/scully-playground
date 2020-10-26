@@ -5,6 +5,7 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
+        "build:static": "ng build --prod && scully",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
@@ -21,15 +22,13 @@
         "@angular/platform-browser": "~9.1.4",
         "@angular/platform-browser-dynamic": "~9.1.4",
         "@angular/router": "~9.1.4",
+        "@directus/sdk-js": "^6.3.0",
         "@scullyio/init": "^1.0.1",
         "@scullyio/ng-lib": "^1.0.0",
         "@scullyio/scully": "^1.0.0",
-        "apollo-angular": "^2.0.4",
         "rxjs": "~6.5.4",
         "tslib": "^1.10.0",
-        "zone.js": "~0.10.2",
-        "@apollo/client": "^3.0.0",
-        "graphql": "^15.0.0"
+        "zone.js": "~0.10.2"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "~0.901.4",
