@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "scully-playground"
+    }
+  },
+  "defaultProject": "scully-playground",
+  "cli": {
+    "analytics": false
+  }
 }
